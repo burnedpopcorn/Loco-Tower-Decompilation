@@ -1,0 +1,13 @@
+image_speed = 0.35
+depth = 7
+state = 0
+falsestate = 0
+level_array[0] = [20, "LOBBY"]
+level_array[1] = [36, "HALL"]
+level_array[2] = [15, "LOCO TOWN"]
+level_array[3] = [26, "FOREST MAZE"]
+level_array[4] = [27, "MAGMA MINE"]
+level_array[5] = [33, "BOSS 1"]
+playerid = -4
+selected = 0
+yoffest = -540

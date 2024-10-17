@@ -1,0 +1,18 @@
+if (showdetails == 1 && (!instance_exists(obj_textbox)))
+{
+    draw_set_font(global.smallerfont)
+    draw_set_halign(fa_left)
+    draw_set_color(c_white)
+    var roomname = room_get_name(room)
+    var spritename = sprite_get_name(obj_player1.sprite_index)
+    draw_text_color(15, 200, ("state: " + string(obj_player1.state)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 232, ("hsp: " + string(obj_player1.hsp)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 264, ("vsp: " + string(obj_player1.vsp)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 292, ("movespeed: " + string(obj_player1.movespeed)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 328, ("room: " + string(roomname)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 360, ("character: " + string(obj_player1.character)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 392, ("sprite: " + string(spritename)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 424, ("image offest: " + string(obj_player1.image_index)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 456, ("x: " + string(obj_player1.x)), c_white, c_white, c_gray, c_gray, 1)
+    draw_text_color(15, 488, ("y: " + string(obj_player1.y)), c_white, c_white, c_gray, c_gray, 1)
+}

@@ -1,0 +1,25 @@
+if (brownfade < 1)
+{
+    pal_swap_set(obj_player1.spr_palette, obj_player1.paletteselect, 0)
+    draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha)
+    shader_reset()
+}
+if (brown == 1)
+{
+    draw_set_alpha(brownfade)
+    shader_set(shd_rank)
+    draw_rectangle_color(0, 0, 960, 540, c_white, c_white, c_white, c_white, 0)
+    draw_self()
+    shader_reset()
+    draw_set_alpha(1)
+}
+draw_set_font(global.bigfont)
+draw_set_color(c_white)
+draw_set_halign(fa_left)
+draw_set_valign(fa_middle)
+draw_rectangle(370, (200 + yOff), 730, 580, false)
+draw_text(400, (230 + yOff), ("POINTS: " + string(global.collect)))
+draw_text(400, (260 + yOff), ("SECRETS: " + string(global.secretfound)))
+draw_text(400, (290 + yOff), ("COMBO: " + string(global.highest_combo)))
+for (var i = 0; i < array_length(toppin_sprite); i++)
+    draw_sprite_ext(toppin_sprite[i], toppin_has[i], (400 + (pad * i)), (340 + yOff), 1, 1, 0, c_white, 1)

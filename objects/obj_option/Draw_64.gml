@@ -1,0 +1,25 @@
+draw_set_alpha(1)
+draw_set_font(global.bigfont)
+draw_set_halign(fa_center)
+draw_set_color(c_white)
+var _os = optionselected
+var _os_fs = optionsaved_fullscreen
+draw_text_colour(480, (50 + yoffest), langstr_get("Options_Fullscreen"), c_white, c_white, c_white, c_white, (_os == 0 ? 1 : 0.5))
+draw_text_colour(380, (100 + yoffest), langstr_get("Options_FullscreenOn"), c_white, c_white, c_white, c_white, (_os_fs == 0 ? 1 : 0.5))
+draw_text_colour(580, (100 + yoffest), langstr_get("Options_FullscreenOff"), c_white, c_white, c_white, c_white, (_os_fs == 1 ? 1 : 0.5))
+var _os_rs = optionsaved_resolution
+draw_text_colour(480, (200 + yoffest), langstr_get("Options_Resolution"), c_white, c_white, c_white, c_white, (_os == 1 ? 1 : 0.5))
+draw_text_colour(300, (250 + yoffest), "480X270", c_white, c_white, c_white, c_white, (_os_rs == 0 ? 1 : 0.5))
+draw_text_colour(480, (250 + yoffest), "960X540", c_white, c_white, c_white, c_white, (_os_rs == 1 ? 1 : 0.5))
+draw_text_colour(680, (250 + yoffest), "1980X1080", c_white, c_white, c_white, c_white, (_os_rs == 2 ? 1 : 0.5))
+var _os_lg = optionsaved_language
+draw_text_colour(480, (350 + yoffest), langstr_get("Options_Language"), c_white, c_white, c_white, c_white, (_os == 2 ? 1 : 0.5))
+draw_text_colour(380, (400 + yoffest), langstr_get("Options_LanguageSpanish"), c_white, c_white, c_white, c_white, (_os_lg == 0 ? 1 : 0.5))
+draw_text_colour(580, (400 + yoffest), langstr_get("Options_LanguageEnglish"), c_white, c_white, c_white, c_white, (_os_lg == 1 ? 1 : 0.5))
+draw_text_colour(480, (484 + yoffest), langstr_get("Options_AudioConfig"), c_white, c_white, c_white, c_white, (_os == 3 ? 1 : 0.5))
+draw_text_colour(480, (564 + yoffest), langstr_get("Options_KeyConfig"), c_white, c_white, c_white, c_white, (_os == 4 ? 1 : 0.5))
+draw_text_colour(480, (660 + yoffest), "EXTRA", c_white, c_white, c_white, c_white, (_os == 5 ? 1 : 0.5))
+if (optionselected != 0)
+    draw_sprite_ext(spr_uparrow, -1, 832, 128, 1, 1, 0, c_white, 1)
+if (optionselected != 5)
+    draw_sprite_ext(spr_uparrow, -1, 832, 448, 1, -1, 0, c_white, 1)

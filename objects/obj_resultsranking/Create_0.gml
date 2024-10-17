@@ -1,0 +1,31 @@
+pointsmax = 0
+lapsmax = 0
+rankindex = 0
+showrank = 0
+pitch = 1
+dead = 0
+gameover = 0
+var i = 0
+ii = 0
+canpointcount = 0
+shakepoints = 0
+shakelaps = 0
+toppin_sprite[0] = spr_toppinportait1
+toppin_sprite[1] = spr_toppinportait2
+toppin_sprite[2] = spr_toppinportait3
+toppin_sprite[3] = spr_toppinportait4
+toppin_sprite[4] = spr_toppinportait5
+alarm[0] = 100
+depth = -999
+yfont = 0
+gravfont = 0.6
+vspfont = 0
+bounce = 3
+for (i = 0; i < array_length(toppin_sprite); i++)
+{
+    toppin_number[i] = sprite_get_number(toppin_sprite[i])
+    toppin_index[i] = 0
+    toppin_has[i] = 0
+    topping_scale[i] = 1
+    topping_shake[i] = 0
+}

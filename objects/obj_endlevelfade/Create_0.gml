@@ -1,0 +1,9 @@
+fadealpha = 0
+AT = 0
+HAT = 0
+stop = 0
+fadein = 0
+tutorialfinal = 0
+depth = -600
+rankmu = 0
+yp = 540

@@ -1,0 +1,10 @@
+image_speed = 0.35
+spr_idle = 1010
+spr_run = 1008
+pizzakin = 1
+playerid = 148
+followQueue = ds_queue_create()
+followid = playerid
+dir = obj_player1.xscale
+space = 0
+set = 0

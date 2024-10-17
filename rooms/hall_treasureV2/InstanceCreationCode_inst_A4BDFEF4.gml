@@ -1,0 +1,1 @@
+specialstageroom = 24

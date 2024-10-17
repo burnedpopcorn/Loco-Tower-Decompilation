@@ -1,0 +1,16 @@
+maxspeed = 1
+hitboxcreate = 0
+image_speed = 0.35
+depth = -5
+stunned = 0
+vsp = 0
+hsp = 0
+moveangle = 90
+targetangle = 90
+angleadjustspeed = 3.5
+movespeed = 0
+targetspeed = 5
+speedadjustspeed = 0.3
+movespeednormal = 5
+movespeedcharge = 15
+lockon = 0

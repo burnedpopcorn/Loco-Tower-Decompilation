@@ -1,0 +1,27 @@
+randomize()
+boxw = 1
+boxx = -256
+boxy = 384
+startingboxx = boxx
+startingboxw = boxw
+targetboxx = 32
+targetboxw = 6.5
+characterportrait = 353
+truecharportrait = characterportrait
+alarm[1] = 1
+charportraitanimspeed = 0.35
+charportraitindex = 0
+ttext[0] = "placeholding"
+currline = 0
+textprog = 0
+typewriterspd = 0.35
+currchar = string_char_at(ttext[currline], floor(textprog))
+settime = 0
+texttimer = 0
+state = 0
+sound[0] = 216
+sound[1] = 216
+sound[2] = 216
+sound[3] = 216
+lastplayed = 0
+playedsound = -4
